@@ -1,0 +1,9 @@
+#!/bin/sh
+PATH=/usr/bin:/usr/sbin:/sbin:/bin
+echo "Welcome to ur mom!"
+[ -r /etc/rc.conf ] && . /etc/rc.conf
+detect_virt
+for f in /etc/seethe/core/*.sh; do
+	[ -r $f ] && . $f
+done
+echo "scripty scripty, they are done..."
