@@ -1,0 +1,5 @@
+if [[ -f "/sbin/agetty" ]]; then
+	setsid /sbin/agetty tty1
+else
+	setsid /sbin/getty tty1
+fi
