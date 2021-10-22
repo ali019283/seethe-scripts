@@ -7,3 +7,6 @@ for f in /etc/seethe/core/*.sh; do
 	[ -r $f ] && . $f
 done
 echo "scripty scripty, they are done..."
+for f in /etc/seethe/runlevel/*; do
+	[ -r $f ] && . $f
+done
